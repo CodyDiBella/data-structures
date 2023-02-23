@@ -36,52 +36,50 @@ This project contains implementations of several common data structures in JavaS
 | Delete | O(log n) | O(n) |
 | Traversal | O(n) | O(n) |
 
- --------
+---
 
-### Linked List
+## Binary Search Tree in more detail
 
-Linked Lists come in multiple variants. The following overview of big O notation for linked lists is not exhaustive, but rather a summary of the most common operations and their time complexity.
+A Binary Search Tree is a data structure that has some special properties. First, it is a tree, which means it has nodes connected by edges, but it is a special kind of tree where each node has at most two children (hence the "binary" part of the name).
 
-#### Singly Linked List:
+The key property of a BST is that for each node in the tree, all the nodes in its left subtree have values less than the value in that node, and all the nodes in its right subtree have values greater than the value in that node. This property makes it very easy and efficient to search for a particular value in the tree.
 
-A singly linked list is a type of linked list where each node has a reference to only the next node in the sequence. Singly linked lists have the following time and space complexities:
+Another advantage of a BST is that it allows for quick insertion and deletion of nodes while maintaining the property that each node in the left subtree has a smaller value and each node in the right subtree has a larger value.
 
-Search: O(n)
-In the worst case, searching a singly linked list requires iterating through each node until the desired node is found. This takes O(n) time.
+## Linked Lists in more detail
 
-Insertion at the Head: O(1)
-Inserting a node at the head of a singly linked list only requires creating a new node and setting its next pointer to the current head. This takes constant time, O(1).
+So, Linked Lists are a really important data structure in computer science. There are a few different types of Linked Lists, and each has its own time and space complexities for common operations.
 
-Insertion at the Tail: O(n)
-Inserting a node at the tail of a singly linked list requires iterating through the entire list to find the last node, then setting its next pointer to the new node. This takes O(n) time.
+### Singly Linked List:
 
-Deletion at the Head: O(1)
-Deleting a node at the head of a singly linked list only requires setting the head pointer to the second node in the list. This takes constant time, O(1).
+This type of Linked List only has a reference to the next node in the sequence. Here are the common operations and their time and space complexities:
 
-Deletion at the Tail: O(n)
-Deleting a node at the tail of a singly linked list requires iterating through the entire list to find the second to last node, then setting its next pointer to null. This takes O(n) time.
+Search: O(n). In the worst case, you'll have to go through each node until you find the one you're looking for.
 
-Space: O(n)
-A singly linked list requires storing a reference to each node in the list, so its space complexity is O(n).
+Insertion at the Head: O(1). This is pretty fast - you just create a new node and set its next pointer to the current head.
 
-#### Doubly Linked List:
+Insertion at the Tail: O(n). This one takes a bit longer, because you have to go through the entire list to find the last node and set its next pointer to the new node.
 
-A doubly linked list is a type of linked list where each node has a reference to both the next and the previous node in the sequence. Doubly linked lists have the following time and space complexities:
+Deletion at the Head: O(1). This is also pretty fast - you just set the head pointer to the second node in the list.
 
-Search: O(n)
-In the worst case, searching a doubly linked list requires iterating through each node until the desired node is found. This takes O(n) time.
+Deletion at the Tail: O(n). This takes a bit longer, because you have to go through the entire list to find the second to last node and set its next pointer to null.
 
-Insertion at the Head: O(1)
-Inserting a node at the head of a doubly linked list only requires creating a new node and setting its next pointer to the current head and its previous pointer to null. This takes constant time, O(1).
+As for space complexity, Singly Linked Lists need to store a reference to each node, so their space complexity is O(n).
 
-Insertion at the Tail: O(1)
-Inserting a node at the tail of a doubly linked list only requires creating a new node and setting its previous pointer to the current tail and its next pointer to null. This takes constant time, O(1).
+### Doubly Linked List:
 
-Deletion at the Head: O(1)
-Deleting a node at the head of a doubly linked list only requires setting the head pointer to the second node in the list and setting the new head's previous pointer to null. This takes constant time, O(1).
+These have references to both the next and previous nodes in the sequence. Here are the common operations and their time and space complexities:
 
-Deletion at the Tail: O(1)
-Deleting a node at the tail of a doubly linked list only requires setting the tail pointer to the second to last node in the list and setting the new tail's next pointer to null. This takes constant time, O(1).
+Search: O(n). Same as with Singly Linked Lists.
 
-Space: O(n)
-A doubly linked list requires storing a reference to each node in the list, so its space complexity is O(n).
+Insertion at the Head: O(1). This is just like with Singly Linked Lists.
+
+Insertion at the Tail: O(1). This is different from Singly Linked Lists, because you can just set the new node's previous pointer to the current tail and its next pointer to null.
+
+Deletion at the Head: O(1). This is just like with Singly Linked Lists.
+
+Deletion at the Tail: O(1). This is also different from Singly Linked Lists, because you can just set the new tail's next pointer to null.
+
+As for space complexity, Doubly Linked Lists also need to store a reference to each node, so their space complexity is O(n).
+
+That's the basic idea! Of course, there are other variations of Linked Lists out there, but this should give you a good understanding of how Singly Linked Lists and Doubly Linked Lists work.
