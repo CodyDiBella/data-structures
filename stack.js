@@ -5,11 +5,13 @@ class Stack {
   }
 
   // Add an element to the top of the stack
+  // O(1) - This operation inserts an element at the end of the array, which takes constant time.
   push(element) {
     this.items.push(element);
   }
 
   // Remove the top element from the stack and return it
+  // O(1) This operation removes the last element from the array, which takes constant time.
   pop() {
     if (this.items.length === 0) { // check if the stack is empty
       return null;
@@ -18,6 +20,7 @@ class Stack {
   }
 
   // Get the top element of the stack without removing it
+  // O(1) - This operation returns the last element of the array, which takes constant time.
   peek() {
     if (this.items.length === 0) { // check if the stack is empty
       return null;
@@ -26,11 +29,13 @@ class Stack {
   }
 
   // Check if the stack is empty
+  // O(1) - This operation checks the length of the array, which takes constant time.
   isEmpty() {
     return this.items.length === 0;
   }
 
   // Get the number of elements in the stack
+  // O(1) - This operation returns the length of the array, which takes constant time.
   size() {
     return this.items.length;
   }
