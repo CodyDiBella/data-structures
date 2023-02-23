@@ -14,6 +14,7 @@ class BinarySearchTree {
   }
 
   // Insert a value into the binary search tree
+  // O(log n) on average, but can be O(n) in the worst case if the tree is unbalanced and resembles a linked list.
   insert(value) {
     const newNode = new Node(value);
     if (this.root === null) { // if the tree is empty
@@ -42,6 +43,7 @@ class BinarySearchTree {
   }
 
   // Find a value in the binary search tree
+  // O(log n) on average, but can be O(n) in the worst case if the tree is unbalanced and resembles a linked list.
   find(value) {
     if (this.root === null) { // if the tree is empty
       return null;
