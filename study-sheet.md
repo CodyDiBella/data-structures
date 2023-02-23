@@ -54,11 +54,15 @@ Breadth-first search is a graph traversal algorithm that visits all the nodes at
 
 Breadth-first search is commonly used to find the shortest path between two nodes in a graph or to determine if a graph is connected. When implementing this algorithm in JavaScript, you typically use a queue to keep track of the nodes that need to be visited, and an array or a map to keep track of the nodes that have already been visited.
 
+A queue is the best data structure for performing BFS.
+
 ## Depth-first search
 
 Depth-first search is a graph traversal algorithm that explores as far as possible along each branch before backtracking. This algorithm starts at a given node, then visits its first unvisited neighbor, then the first unvisited neighbor of that node, and so on, until it reaches a dead end. Then it backtracks to the most recent node with unvisited neighbors and continues exploring from there.
 
 Depth-first search is commonly used to search for a path between two nodes in a graph or to explore all possible paths in a maze. When implementing this algorithm in JavaScript, you typically use a stack or recursion to keep track of the nodes that need to be visited, and an array or a map to keep track of the nodes that have already been visited.
+
+A stack is the best data structure for performing DFS.
 
 ## In-order, pre-order, and post-order tree traversal
 
