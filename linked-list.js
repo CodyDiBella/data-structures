@@ -1,4 +1,4 @@
-// Define a class for a node in the (single linked) linked list
+// Define a class for a node in the (single-linked) linked list
 class Node {
   constructor(data) {
     this.data = data; // the data stored in the node
@@ -14,6 +14,7 @@ class LinkedList {
   }
 
   // Add a node to the end of the list
+  // O(n) - adding a node to the end of the linked list requires iterating through the list to find the last node, which takes linear time in the size of the list.
   add(data) {
     const node = new Node(data);
 
@@ -33,6 +34,7 @@ class LinkedList {
   }
 
   // Remove a node from the list by its index
+  // O(n) - removing a node from the linked list by its index requires iterating through the list to find the node to remove, which takes linear time in the size of the list.
   remove(index) {
     if (index < 0 || index >= this.size) { // check if index is out of bounds
       return null;
@@ -59,6 +61,7 @@ class LinkedList {
   }
 
   // Get the data of a node at a specific index
+  // O(n) - getting the data of a node at a specific index requires iterating through the list to find the node, which takes linear time in the size of the list.
   get(index) {
     if (index < 0 || index >= this.size) { // check if index is out of bounds
       return null;
@@ -76,6 +79,7 @@ class LinkedList {
   }
 
   // Get the size of the list
+  // O(1) - getting the size of the linked list can be done in constant time, since the size is stored as a property of the LinkedList class.
   getSize() {
     return this.size;
   }
