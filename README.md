@@ -38,7 +38,7 @@ This project contains implementations of several common data structures in JavaS
 
 ---
 
-## Binary Search Tree in more detail
+## Binary Search Tree quick overview
 
 A Binary Search Tree is a data structure that has some special properties. First, it is a tree, which means it has nodes connected by edges, but it is a special kind of tree where each node has at most two children (hence the "binary" part of the name).
 
@@ -46,7 +46,7 @@ The key property of a BST is that for each node in the tree, all the nodes in it
 
 Another advantage of a BST is that it allows for quick insertion and deletion of nodes while maintaining the property that each node in the left subtree has a smaller value and each node in the right subtree has a larger value.
 
-## Linked Lists in more detail
+## Linked Lists quick overview
 
 So, Linked Lists are a really important data structure in computer science. There are a few different types of Linked Lists, and each has its own time and space complexities for common operations.
 
